@@ -9,6 +9,9 @@
  * Create on 23/12/2015
  *
  */
+
+package co.test.papercut;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -54,7 +57,7 @@ public class PaperCutPrintCostCalculator {
 		
 		if(printSide.contains("true")) {
 			System.out.println("");
-			System.out.println("--- Cost Estimate ---");			
+			System.out.println("--- Paper Cut Price Estimate ---");			
 			System.out.printf("Total number of pages - "+ tPage);
 			System.out.printf("%n");
 			System.out.printf("Total color pages - "+ cPage);
@@ -71,7 +74,7 @@ public class PaperCutPrintCostCalculator {
 			System.out.printf("Total Cost: single sided - $%6.2f%n", costTotal);
 		} else {
 			System.out.println("");
-			System.out.println("--- Cost Estimate ---");
+			System.out.println("--- Paper Cut Price Estimate ---");
 			System.out.printf("Total number of pages - "+ tPage);
 			System.out.printf("%n");
 			System.out.printf("Total color pages - "+ cPage);
