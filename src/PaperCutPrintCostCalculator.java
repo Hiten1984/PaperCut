@@ -18,8 +18,7 @@ public class PaperCutPrintCostCalculator {
 	static double costTotal = 0;
 
 	public static void main(String... args) {
-		// Path of the file is used in the local directory.
-		//List<PaperPrint> printCSV = readPrintJobsFromCSV("C:\\Users\\Ganu\\Downloads\\printjobs.csv");	
+		// Path of the file is used in the local directory.	
 		List<PaperPrint> printCSV = readPrintJobsFromCSV("printjobs.csv");
 		calculateJob(printCSV);	
 	}
