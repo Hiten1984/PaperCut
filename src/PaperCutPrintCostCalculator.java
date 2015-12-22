@@ -31,15 +31,16 @@ public class PaperCutPrintCostCalculator {
 		for (PaperPrint paper : pList) {			
 			printSide = paper.getPrintSide();		
 			tPage = paper.getTotalPage();
-			cPage = paper.getColorPage();			
-			blackPage = tPage - cPage;
-			countJobs(printSide,tPage, cPage, blackPage);
+			cPage = paper.getColorPage();
+			countJobs(printSide,tPage, cPage);
 		}
 	}
 
-	public static void countJobs(String printSide, int tPage, int cPage, int blackPage) {
+	public static void countJobs(String printSide, int tPage, int cPage) {
 		double bCost = 0;
 		double cCost = 0;
+		blackPage = tPage - cPage;
+		
 		if(printSide.contains("true")) {
 			System.out.println("");
 			System.out.println("--- Cost Estimate ---");			
