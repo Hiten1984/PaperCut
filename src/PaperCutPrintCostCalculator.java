@@ -1,7 +1,7 @@
 /**
  * @author Hiten Sahai Bahri
  *
- * This file is part of the P
+ * This file is part of the PaperCut audition. 
  *
  * Copyright @author Hiten Sahai Bahri
  * All Rights Reserved
